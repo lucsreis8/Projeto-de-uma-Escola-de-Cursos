@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos | Exata Cursos</title>
+    <link rel="icon" href="/img/LOGO SEM FUNDO.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="curso.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
+
+    <canvas id="bg"></canvas>
+
+    <!-- ================= DESKTOP ================= -->
+    <header class="desktop-header">
+
+        <div class="top-bar">
+            <span>Transforme seu futuro com cursos profissionalizantes!!</span>
+
+            <div class="top-links">
+                <a href="https://playcurso.com/exatacursos/metodo/login.php">Meus Cursos</a>
+                <a href="contato.html">Suporte</a>
+            </div>
+        </div>
+
+        <div class="main-header">
+
+            <a href="index.html" class="back-btn">
+                <svg viewBox="0 0 24 24" width="20">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+
+            <img src="img/LOGO SEM FUNDO OLD.png" class="logo">
+
+            <div class="right">
+
+                <div class="socials">
+
+                    <a href="https://www.instagram.com/exatacursoss/" target="_blank">
+                        <img src="img/Instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://facebook.com/suapagina" target="_blank">
+                        <img src="img/Facebook.png" alt="Facebook">
+                    </a>
+
+                </div>
+
+                <!-- TEMA -->
+                <button class="theme-btn theme-toggle">
+
+                    <svg class="icon sun" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" />
+                        <g>
+                            <line x1="12" y1="2" x2="12" y2="5" />
+                            <line x1="12" y1="19" x2="12" y2="22" />
+                            <line x1="4.2" y1="4.2" x2="6.5" y2="6.5" />
+                            <line x1="17.5" y1="17.5" x2="19.8" y2="19.8" />
+                            <line x1="2" y1="12" x2="5" y2="12" />
+                            <line x1="19" y1="12" x2="22" y2="12" />
+                            <line x1="4.2" y1="19.8" x2="6.5" y2="17.5" />
+                            <line x1="17.5" y1="6.5" x2="19.8" y2="4.2" />
+                        </g>
+                    </svg>
+
+                    <svg class="icon moon" viewBox="0 0 24 24">
+                        <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3 
+                    6.5 6.5 0 0 0 21 12.5Z" />
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= MOBILE ================= -->
+    <header class="mobile-header">
+
+        <a href="index.html" class="back-btn">
+            <svg viewBox="0 0 24 24" width="20">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+
+        <img src="img/LOGO SEM FUNDO OLD.png" class="logo">
+
+        <div class="actions">
+
+            <button class="theme-btn theme-toggle">
+
+                <svg class="icon sun" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4" />
+                    <g>
+                        <line x1="12" y1="2" x2="12" y2="5" />
+                        <line x1="12" y1="19" x2="12" y2="22" />
+                        <line x1="4.2" y1="4.2" x2="6.5" y2="6.5" />
+                        <line x1="17.5" y1="17.5" x2="19.8" y2="19.8" />
+                        <line x1="2" y1="12" x2="5" y2="12" />
+                        <line x1="19" y1="12" x2="22" y2="12" />
+                        <line x1="4.2" y1="19.8" x2="6.5" y2="17.5" />
+                        <line x1="17.5" y1="6.5" x2="19.8" y2="4.2" />
+                    </g>
+                </svg>
+
+                <svg class="icon moon" viewBox="0 0 24 24">
+                    <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3 
+        6.5 6.5 0 0 0 21 12.5Z" />
+                </svg>
+
+            </button>
+
+            <div id="menuToggle" class="menu-toggle">☰</div>
+
+        </div>
+
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobileMenu" class="mobile-menu">
+
+        <a href="index.html">Início</a>
+        <a href="curso.html">Nossos Cursos</a>
+        <a href="contato.html">Contato</a>
+
+        <hr>
+
+        <a href="https://playcurso.com/exatacursos/metodo/login.php">Meus Cursos</a>
+        <a href="contato.html">Suporte</a>
+
+    </div>
+
+    <section class="courses-section">
+
+        <div class="courses-header">
+            <h2>Nossos Cursos</h2>
+            <p>Escolha o curso ideal para transformar seu futuro</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 Buscar cursos...">
+        </div>
+
+        <div class="courses-grid">
+
+            <!-- CURSO -->
+            <div class="course-card">
+                <img src="img/gestao-administrativa.jpg">
+                <div class="course-content">
+                    <h3>Administração</h3>
+                    <a href="#" class="btn-course" data-curso="Administração">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- CURSO -->
+            <div class="course-card">
+                <img src="img/TI.jpg">
+                <div class="course-content">
+                    <h3>Tecnologia da Informação</h3>
+                    <a href="#" class="btn-course" data-curso="Tecnologia da Informação">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- CURSO -->
+            <div class="course-card">
+                <img src="img/informtica_avanada.png">
+                <div class="course-content">
+                    <h3>Informática Avançada</h3>
+                    <a href="#" class="btn-course" data-curso="Informática Avançada">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- IDIOMAS -->
+            <div class="course-card">
+                <img src="img/Inglês.jpg">
+                <div class="course-content">
+                    <h3>Inglês</h3>
+                    <a href="#" class="btn-course" data-curso="Inglês">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Espanhol.png">
+                <div class="course-content">
+                    <h3>Espanhol</h3>
+                    <a href="#" class="btn-course" data-curso="Espanhol">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- INFORMÁTICA -->
+            <div class="course-card">
+                <img src="img/61.jpg">
+                <div class="course-content">
+                    <h3>Access</h3>
+                    <a href="#" class="btn-course" data-curso="Access">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/231.jpg">
+                <div class="course-content">
+                    <h3>Canva</h3>
+                    <a href="#" class="btn-course" data-curso="Canva">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/73.jpg">
+                <div class="course-content">
+                    <h3>Criação de Loja Virtual</h3>
+                    <a href="#" class="btn-course" data-curso="Criação de Loja Virtual">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/42.jpg">
+                <div class="course-content">
+                    <h3>Excel</h3>
+                    <a href="#" class="btn-course" data-curso="Excel">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/47.jpg">
+                <div class="course-content">
+                    <h3>Microsoft Word</h3>
+                    <a href="#" class="btn-course" data-curso="Microsoft Word">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/48.jpg">
+                <div class="course-content">
+                    <h3>Power Point</h3>
+                    <a href="#" class="btn-course" data-curso="Power Point">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/46.jpg">
+                <div class="course-content">
+                    <h3>Windows 10</h3>
+                    <a href="#" class="btn-course" data-curso="Windows 10">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/222.jpg">
+                <div class="course-content">
+                    <h3>Windows 11</h3>
+                    <a href="#" class="btn-course" data-curso="Windows 11">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- ADMINISTRAÇÃO -->
+            <div class="course-card">
+                <img src="img/16.jpg">
+                <div class="course-content">
+                    <h3>Administração Mercado de Trabalho</h3>
+                    <a href="#" class="btn-course" data-curso="Administração Mercado de Trabalho">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/232.jpg">
+                <div class="course-content">
+                    <h3>Conhecimentos Bancários</h3>
+                    <a href="#" class="btn-course" data-curso="Conhecimentos Bancários">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/33.jpg">
+                <div class="course-content">
+                    <h3>Contabilidade</h3>
+                    <a href="#" class="btn-course" data-curso="Contabilidade">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/35.jpg">
+                <div class="course-content">
+                    <h3>Departamento Pessoal</h3>
+                    <a href="#" class="btn-course" data-curso="Departamento Pessoal">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/38.jpg">
+                <div class="course-content">
+                    <h3>Gestão em RH</h3>
+                    <a href="#" class="btn-course" data-curso="Gestão em RH">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/233.jpg">
+                <div class="course-content">
+                    <h3>Investimento no Mercado Financeiro</h3>
+                    <a href="#" class="btn-course" data-curso="Investimento no Mercado Financeiro">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/96.jpg">
+                <div class="course-content">
+                    <h3>Logística 4.0</h3>
+                    <a href="#" class="btn-course" data-curso="Logística 4.0">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/234.jpg">
+                <div class="course-content">
+                    <h3>Matemática Financeira</h3>
+                    <a href="#" class="btn-course" data-curso="Matemática Financeira">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- TI -->
+            <div class="course-card">
+                <img src="img/32.jpg">
+                <div class="course-content">
+                    <h3>Linux</h3>
+                    <a href="#" class="btn-course" data-curso="Linux">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/29.jpg">
+                <div class="course-content">
+                    <h3>Montagem e Manutenção de PC</h3>
+                    <a href="#" class="btn-course" data-curso="Montagem e Manutenção de PC">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/212.jpg">
+                <div class="course-content">
+                    <h3>Power BI</h3>
+                    <a href="#" class="btn-course" data-curso="Power BI">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/30.jpg">
+                <div class="course-content">
+                    <h3>Segurança na Internet</h3>
+                    <a href="#" class="btn-course" data-curso="Segurança na Internet">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/71.jpg">
+                <div class="course-content">
+                    <h3>Lógica de Programação</h3>
+                    <a href="#" class="btn-course" data-curso="Lógica de Programação">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/TI.jpg">
+                <div class="course-content">
+                    <h3>Introdução à Informática</h3>
+                    <a href="#" class="btn-course" data-curso="Introdução à Informática">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Google ads.jpg">
+                <div class="course-content">
+                    <h3>Google Adwords</h3>
+                    <a href="#" class="btn-course" data-curso="Google Adwords">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/45.jpg">
+                <div class="course-content">
+                    <h3>Google Drive</h3>
+                    <a href="#" class="btn-course" data-curso="Google Drive">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/80.jpg">
+                <div class="course-content">
+                    <h3>Manutenção de Celular</h3>
+                    <a href="#" class="btn-course" data-curso="Manutenção de Celular">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/236.jpg">
+                <div class="course-content">
+                    <h3>Criação de Game Profissional</h3>
+                    <a href="#" class="btn-course" data-curso="Criação de Game Profissional">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/43.jpg">
+                <div class="course-content">
+                    <h3>JavaScript</h3>
+                    <a href="#" class="btn-course" data-curso="JavaScript">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/HTML E CSS.webp">
+                <div class="course-content">
+                    <h3>HTML e CSS</h3>
+                    <a href="#" class="btn-course" data-curso="HTML e CSS">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- OUTROS -->
+            <div class="course-card">
+                <img src="img/MKTD.jpg">
+                <div class="course-content">
+                    <h3>Marketing Digital</h3>
+                    <a href="#" class="btn-course" data-curso="Marketing Digital">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/50.jpg">
+                <div class="course-content">
+                    <h3>Telemarketing</h3>
+                    <a href="#" class="btn-course" data-curso="Telemarketing">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/217.jpg">
+                <div class="course-content">
+                    <h3>Digitação Interativa</h3>
+                    <a href="#" class="btn-course" data-curso="Digitação Interativa">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Tecnicas-de-Redacao.jpg">
+                <div class="course-content">
+                    <h3>Técnicas de Redação</h3>
+                    <a href="#" class="btn-course" data-curso="Técnicas de Redação">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Enfermagem.jpg">
+                <div class="course-content">
+                    <h3>Enfermagem</h3>
+                    <a href="#" class="btn-course" data-curso="Enfermagem">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/libras.png">
+                <div class="course-content">
+                    <h3>Libras</h3>
+                    <a href="#" class="btn-course" data-curso="Libras">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Python.jpg">
+                <div class="course-content">
+                    <h3>Python</h3>
+                    <a href="#" class="btn-course" data-curso="Python">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/bancos-de-dados-sql.jpg">
+                <div class="course-content">
+                    <h3>Banco de Dados (SQL)</h3>
+                    <a href="#" class="btn-course" data-curso="Banco de Dados (SQL)">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/IA.png">
+                <div class="course-content">
+                    <h3>Inteligência Artificial (Básico)</h3>
+                    <a href="#" class="btn-course" data-curso="Inteligência Artificial (Básico)">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/cyber-security.jpg">
+                <div class="course-content">
+                    <h3>Cibersegurança</h3>
+                    <a href="#" class="btn-course" data-curso="Cibersegurança">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/desenvolvimento-apps.webp">
+                <div class="course-content">
+                    <h3>Desenvolvimento de Apps (Android)</h3>
+                    <a href="#" class="btn-course" data-curso="Desenvolvimento de Apps (Android)">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/atendimento-ao-cliente.webp">
+                <div class="course-content">
+                    <h3>Atendimento ao Cliente</h3>
+                    <a href="#" class="btn-course" data-curso="Atendimento ao Cliente">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Lideranca-e-gestao-de-pessoas.jpg">
+                <div class="course-content">
+                    <h3>Liderança e Gestão de Equipes</h3>
+                    <a href="#" class="btn-course" data-curso="Liderança e Gestão de Equipes">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/rotinas-administrativas.jpg">
+                <div class="course-content">
+                    <h3>Rotinas Administrativas</h3>
+                    <a href="#" class="btn-course" data-curso="Rotinas Administrativas">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Educação-financeira.png">
+                <div class="course-content">
+                    <h3>Educação Financeira</h3>
+                    <a href="#" class="btn-course" data-curso="Educação Financeira">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/B3.png">
+                <div class="course-content">
+                    <h3>Bolsa de Valores (Iniciante)</h3>
+                    <a href="#" class="btn-course" data-curso="Bolsa de Valores (Iniciante)">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Financas-E.webp">
+                <div class="course-content">
+                    <h3>Finanças Empresariais</h3>
+                    <a href="#" class="btn-course" data-curso="Finanças Empresariais">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/entrevista.jpg">
+                <div class="course-content">
+                    <h3>Preparação para Entrevistas</h3>
+                    <a href="#" class="btn-course" data-curso="Preparação para Entrevistas">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/socialmedia.avif">
+                <div class="course-content">
+                    <h3>Social Media</h3>
+                    <a href="#" class="btn-course" data-curso="Social Media">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/trafego-pago.webp">
+                <div class="course-content">
+                    <h3>Tráfego Pago (Facebook Ads)</h3>
+                    <a href="#" class="btn-course" data-curso="Tráfego Pago (Facebook Ads)">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/ecommerce.jpg">
+                <div class="course-content">
+                    <h3>E-commerce Completo</h3>
+                    <a href="#" class="btn-course" data-curso="E-commerce Completo">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/marketing.jpg">
+                <div class="course-content">
+                    <h3>Marketing de Conteúdo</h3>
+                    <a href="#" class="btn-course" data-curso="Marketing de Conteúdo">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/design.jpg">
+                <div class="course-content">
+                    <h3>Design Gráfico</h3>
+                    <a href="#" class="btn-course" data-curso="Design Gráfico">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/photoshop.webp">
+                <div class="course-content">
+                    <h3>Photoshop</h3>
+                    <a href="#" class="btn-course" data-curso="Photoshop">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/Ilustrator.jpg">
+                <div class="course-content">
+                    <h3>Illustrator</h3>
+                    <a href="#" class="btn-course" data-curso="Illustrator">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/edição.png">
+                <div class="course-content">
+                    <h3>Edição de Vídeo</h3>
+                    <a href="#" class="btn-course" data-curso="Edição de Vídeo">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/capcut.avif">
+                <div class="course-content">
+                    <h3>CapCut / Premiere</h3>
+                    <a href="#" class="btn-course" data-curso="CapCut / Premiere">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/motion.png">
+                <div class="course-content">
+                    <h3>Motion Design</h3>
+                    <a href="#" class="btn-course" data-curso="Motion Design">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/cuidador-de-idosos.jpg">
+                <div class="course-content">
+                    <h3>Cuidador de Idosos</h3>
+                    <a href="#" class="btn-course" data-curso="Cuidador de Idosos">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/primeiros-socorros.jpg">
+                <div class="course-content">
+                    <h3>Primeiros Socorros</h3>
+                    <a href="#" class="btn-course" data-curso="Primeiros Socorros">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/eletricista.jpg">
+                <div class="course-content">
+                    <h3>Eletricista Básico</h3>
+                    <a href="#" class="btn-course" data-curso="Eletricista Básico">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/217.jpg">
+                <div class="course-content">
+                    <h3>Digitação Profissional</h3>
+                    <a href="#" class="btn-course" data-curso="Digitação Profissional">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/operador.jpg">
+                <div class="course-content">
+                    <h3>Operador de Caixa</h3>
+                    <a href="#" class="btn-course" data-curso="Operador de Caixa">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/farmácia.jpg">
+                <div class="course-content">
+                    <h3>Auxiliar de Farmácia</h3>
+                    <a href="#" class="btn-course" data-curso="Auxiliar de Farmácia">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/recepcionista.webp">
+                <div class="course-content">
+                    <h3>Recepcionista</h3>
+                    <a href="#" class="btn-course" data-curso="Recepcionista">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/secretariado.jpg">
+                <div class="course-content">
+                    <h3>Secretariado</h3>
+                    <a href="#" class="btn-course" data-curso="Secretariado">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="img/vendaspro.jpg">
+                <div class="course-content">
+                    <h3>Vendas Profissionais</h3>
+                    <a href="#" class="btn-course" data-curso="Vendas Profissionais">Matricule-se</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LOGO -->
+            <div class="footer-brand">
+                <img src="img/LOGO SEM FUNDO OLD.png" alt="Exata Cursos">
+                <p>Transformando o seu futuro através da educação profissional.</p>
+            </div>
+
+            <!-- CONTATO -->
+            <div class="footer-contact">
+                <h3>Contato</h3>
+
+                <p>
+                    <img src="img/telefone.png" class="icon">
+                    <a href="tel:+5561991795648">
+                        (61) 99179-5648
+                    </a>
+                </p>
+
+                <p>
+                    <img src="img/whatsapp.png" class="icon">
+                    <a href="https://wa.me/5561991795648?text=Olá,%20quero%20saber%20mais%20sobre%20os%20cursos"
+                        target="_blank">
+                        (61) 99179-5648
+                    </a>
+                </p>
+
+                <p>
+                    <img src="img/e-mail.png" class="icon">
+                    <a href="mailto:exatascursos23@gmail.com">
+                        exatascursos23@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <img src="img/pin.png" class="icon">
+                    <a href="https://www.google.com/maps?q=St.+B+Norte+QNB+18+Lote+01+Taguatinga+Brasilia"
+                        target="_blank">
+                        St. B Norte QNB 18 LOTE 01 - Taguatinga, Brasília - DF, 72115-180
+                    </a>
+                </p>
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-links">
+                <h3>Links</h3>
+
+                <a href="index.html">Início</a>
+                <a href="curso.html">Cursos</a>
+                <a href="Contatos/contato.html">Contato</a>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            <p>© 2026 Exata Cursos Profissionalizantes - Todos os direitos reservados</p>
+        </div>
+
+    </footer>
+
+    <script src="curso.js"></script>
+
+
+</body>
+
+</html>

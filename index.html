@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exata Cursos Profissionalizantes</title>
+    <link rel="icon" href="img/LOGO SEM FUNDO.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
+
+    <canvas id="bg"></canvas>
+    <!-- ================= DESKTOP ================= -->
+    <header class="desktop-header">
+
+        <div class="top-bar">
+            <span>Transforme seu futuro com cursos profissionalizantes!!</span>
+
+            <div class="top-links">
+                <a href="https://playcurso.com/exatacursos/metodo/login.php">Meus Cursos</a>
+                <a href="contato.html">Suporte</a>
+            </div>
+        </div>
+
+        <div class="main-header">
+
+            <img src="img/LOGO SEM FUNDO OLD.png" class="logo">
+
+            <nav class="nav">
+
+                <a href="#scroll-banner" class="active">Início</a>
+
+                <div class="dropdown">
+                    <a href="curso.html">Nossos Cursos ▾</a>
+
+                    <div class="dropdown-menu">
+                        <a href="curso.html">Informática</a>
+                        <a href="curso.html">Administração</a>
+                        <a href="curso.html">Design Gráfico</a>
+                        <a href="curso.html">Marketing Digital</a>
+                    </div>
+                </div>
+
+                <a href="#about-school">Sobre</a>
+
+                <a href="contato.html">Contato</a>
+
+            </nav>
+
+            <div class="right">
+
+                <div class="socials">
+
+                    <a href="https://www.instagram.com/exatacursoss/" target="_blank">
+                        <img src="img/Instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://facebook.com/suapagina" target="_blank">
+                        <img src="img/Facebook.png" alt="Facebook">
+                    </a>
+
+                </div>
+
+                <!-- TEMA -->
+                <button class="theme-btn theme-toggle">
+
+                    <svg class="icon sun" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" />
+                        <g>
+                            <line x1="12" y1="2" x2="12" y2="5" />
+                            <line x1="12" y1="19" x2="12" y2="22" />
+                            <line x1="4.2" y1="4.2" x2="6.5" y2="6.5" />
+                            <line x1="17.5" y1="17.5" x2="19.8" y2="19.8" />
+                            <line x1="2" y1="12" x2="5" y2="12" />
+                            <line x1="19" y1="12" x2="22" y2="12" />
+                            <line x1="4.2" y1="19.8" x2="6.5" y2="17.5" />
+                            <line x1="17.5" y1="6.5" x2="19.8" y2="4.2" />
+                        </g>
+                    </svg>
+
+                    <svg class="icon moon" viewBox="0 0 24 24">
+                        <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3 
+                    6.5 6.5 0 0 0 21 12.5Z" />
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MOBILE ================= -->
+    <header class="mobile-header">
+
+        <img src="img/LOGO SEM FUNDO OLD.png" class="logo">
+
+        <div class="actions">
+
+            <button class="theme-btn theme-toggle">
+
+                <svg class="icon sun" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4" />
+                    <g>
+                        <line x1="12" y1="2" x2="12" y2="5" />
+                        <line x1="12" y1="19" x2="12" y2="22" />
+                        <line x1="4.2" y1="4.2" x2="6.5" y2="6.5" />
+                        <line x1="17.5" y1="17.5" x2="19.8" y2="19.8" />
+                        <line x1="2" y1="12" x2="5" y2="12" />
+                        <line x1="19" y1="12" x2="22" y2="12" />
+                        <line x1="4.2" y1="19.8" x2="6.5" y2="17.5" />
+                        <line x1="17.5" y1="6.5" x2="19.8" y2="4.2" />
+                    </g>
+                </svg>
+
+                <svg class="icon moon" viewBox="0 0 24 24">
+                    <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3 
+        6.5 6.5 0 0 0 21 12.5Z" />
+                </svg>
+
+            </button>
+
+            <div id="menuToggle" class="menu-toggle">☰</div>
+
+        </div>
+
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobileMenu" class="mobile-menu">
+
+        <a href="#scroll-banner">Início</a>
+        <a href="curso.html">Nossos Cursos</a>
+        <a href="#about-school">Sobre</a>
+        <a href="contato.html">Contato</a>
+
+        <hr>
+
+        <a href="https://playcurso.com/exatacursos/metodo/login.php">Meus Cursos</a>
+
+    </div>
+
+    <section class="scroll-banner" id="scroll-banner">
+        <p class="scroll-text">
+            PRONTO PARA DAR O PRÓXIMO PASSO NA SUA CARREIRA?
+            <span>DESCUBRA MAIS DE 100 CURSOS E EVOLUA HOJE MESMO.</span>
+        </p>
+    </section>
+
+    <section class="carousel" id="carousel">
+
+        <div class="carousel-container">
+
+            <div class="carousel-track" id="carouselTrack">
+                <img src="img/programação.png" class="slide">
+                <img src="img/EJA.png" class="slide">
+                <img src="img/MKT.png" class="slide">
+                <img src="img/recursos.png" class="slide">
+            </div>
+
+            <!-- BOTÕES AGORA DENTRO -->
+            <button class="btn prev" id="prevBtn">❮</button>
+            <button class="btn next" id="nextBtn">❯</button>
+
+        </div>
+
+    </section>
+
+    <section class="courses">
+
+        <div class="courses-header">
+            <h2>Escolha seu futuro profissional</h2>
+            <p>Descubra cursos ideais para acelerar sua carreira</p>
+        </div>
+
+        <!-- CATEGORIAS -->
+        <div class="categories">
+            <button class="active" data-filter="all">Todos</button>
+            <button data-filter="adm">Administração</button>
+            <button data-filter="ti">T.I</button>
+            <button data-filter="info">Informática</button>
+            <button data-filter="idiomas">Idiomas</button>
+            <button data-filter="marketing">Marketing</button>
+        </div>
+
+        <!-- CURSOS -->
+        <div class="courses-grid">
+
+            <div class="course-card" data-category="adm">
+                <div class="img-box">
+                    <img src="img/gestao-administrativa.jpg">
+                </div>
+                <div class="course-info">
+                    <h3>Administração</h3>
+                    <a href="#" class="btn-main">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="ti">
+                <div class="img-box">
+                    <img src="img/ti.jpg">
+                </div>
+                <div class="course-info">
+                    <h3>Tecnologia da Informação</h3>
+                    <a href="#" class="btn-main">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="info">
+                <div class="img-box">
+                    <img src="img/informtica_avanada.png">
+                </div>
+                <div class="course-info">
+                    <h3>Informática Avançada</h3>
+                    <a href="#" class="btn-main">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- IDIOMAS -->
+            <div class="course-card" data-category="idiomas">
+                <div class="img-box">
+                    <img src="img/Inglês.jpg">
+                </div>
+                <div class="course-info">
+                    <h3>Inglês</h3>
+                    <a href="#" class="btn-main">Matricule-se</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="idiomas">
+                <div class="img-box">
+                    <img src="img/Espanhol.png">
+                </div>
+                <div class="course-info">
+                    <h3>Espanhol</h3>
+                    <a href="#" class="btn-main">Matricule-se</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MARKETING -->
+
+        <div class="course-card" data-category="marketing">
+            <div class="img-box">
+                <img src="img/MKTD.jpg">
+            </div>
+            <div class="course-info">
+                <h3>Marketing Digital</h3>
+                <a href="#" class="btn-main">Matricule-se</a>
+            </div>
+        </div>
+
+
+        <div class="course-card" data-category="marketing">
+            <div class="img-box">
+                <img src="img/Google ads.jpg">
+            </div>
+            <div class="course-info">
+                <h3>Google Ads (AdWords)</h3>
+                <a href="#" class="btn-main">Matricule-se</a>
+            </div>
+        </div>
+
+        <div class="more-courses">
+            <a href="curso.html" class="btn-more">Ver mais cursos</a>
+        </div>
+
+    </section>
+
+    <section class="about-school" id="about-school">
+
+        <div class="about-container">
+
+            <!-- SLIDER -->
+            <div class="about-slider">
+
+                <div class="slides" id="aboutSlides">
+
+                    <div class="slide">
+                        <img src="img/Escola 1.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 3.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 4.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 5.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 6.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 7.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 8.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 9.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 10.jpeg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/Escola 12.jpeg">
+                    </div>
+                </div>
+
+                <!-- BOTÕES -->
+                <button class="prev" id="aboutPrev">‹</button>
+                <button class="next" id="aboutNext">›</button>
+
+            </div>
+
+            <!-- TEXTO -->
+            <div class="about-text">
+                <h2>Sobre a Exata Cursos</h2>
+
+                <p>
+                    A <strong>Exata Cursos Profissionalizantes</strong> é uma instituição especializada na formação de
+                    alunos para o mercado de trabalho, oferecendo cursos atualizados, práticos e alinhados com as
+                    exigências reais das empresas.
+                </p>
+
+                <p>
+                    Nosso compromisso é desenvolver habilidades que fazem a diferença, com metodologia moderna,
+                    professores qualificados e foco total na empregabilidade dos nossos alunos.
+                </p>
+
+                <p>
+                    📍 Estamos localizados em <strong>Taguatinga - DF</strong>, com uma estrutura completa que
+                    proporciona conforto, tecnologia e um ambiente ideal para o aprendizado.
+                </p>
+
+                <p>
+                    Invista no seu futuro ou no futuro do seu filho. Venha conhecer a Exata Cursos e dê o próximo passo
+                    rumo à sua carreira profissional.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="feedbacks">
+
+        <div class="feedback-header">
+            <h2>O que nossos alunos dizem</h2>
+            <p>Resultados reais de quem já transformou a carreira</p>
+        </div>
+
+        <div class="feedback-grid">
+
+            <!-- CARD -->
+            <div class="feedback-card">
+                <img src="img/Perfil.jpg" class="avatar">
+
+                <p class="feedback-text">
+                    "Curso incrível! Aprendi muito e já consegui melhorar minha renda."
+                </p>
+
+                <h3>Miguel Souza</h3>
+                <span>Aluno de Administração</span>
+            </div>
+
+            <div class="feedback-card">
+                <img src="img/Perfil.jpg" class="avatar">
+
+                <p class="feedback-text">
+                    "Aprendi a crescer na vida com os cursos e professores. Professores icríveis e estrutura de escola
+                    ótima para estudo teórico e prático."
+                </p>
+
+                <h3>João Reis</h3>
+                <span>Aluno de T.I e Administração</span>
+            </div>
+
+            <div class="feedback-card">
+                <img src="img/Perfil.jpg" class="avatar">
+
+                <p class="feedback-text">
+                    "Comecei do zero e hoje já trabalho na área graças ao curso."
+                </p>
+
+                <h3>Maria Clara</h3>
+                <span>Aluna de Informática</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="faq">
+
+        <div class="faq-header">
+            <h2>Dúvidas Frequentes</h2>
+            <p>Tudo o que você precisa saber antes de começar</p>
+        </div>
+
+        <div class="faq-box">
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Como funcionam os cursos?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Os cursos são online, com acesso imediato após a matrícula.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Recebo certificado?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Sim, todos os cursos possuem certificado válido em todo o Brasil.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Preciso ter experiência?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Não, temos cursos do básico ao avançado.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Posso estudar pelo celular?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Sim, nossa plataforma é totalmente responsiva.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Os cursos têm suporte ao aluno?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Sim, você terá suporte para tirar dúvidas sempre que precisar.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Quanto tempo tenho de acesso?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    O acesso é liberado por tempo suficiente para você concluir com tranquilidade.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Os cursos são reconhecidos?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Sim, os certificados são válidos em todo o Brasil e podem ser usados para currículo e horas
+                    complementares.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Posso acessar pelo celular?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Sim, você pode estudar pelo celular, tablet ou computador.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Como faço minha matrícula?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    Basta clicar em "Matricule-se" no curso desejado e seguir o processo.
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LOGO -->
+            <div class="footer-brand">
+                <img src="img/LOGO SEM FUNDO OLD.png" alt="Exata Cursos">
+                <p>Transformando o seu futuro através da educação profissional.</p>
+            </div>
+
+            <!-- CONTATO -->
+            <div class="footer-contact">
+                <h3>Contato</h3>
+
+                <p>
+                    <img src="img/telefone.png" class="icon">
+                    <a href="tel:+5561991795648">
+                        (61) 99179-5648
+                    </a>
+                </p>
+
+                <p>
+                    <img src="img/whatsapp.png" class="icon">
+                    <a href="https://wa.me/5561991795648?text=Olá,%20quero%20saber%20mais%20sobre%20os%20cursos"
+                        target="_blank">
+                        (61) 99179-5648
+                    </a>
+                </p>
+
+                <p>
+                    <img src="img/e-mail.png" class="icon">
+                    <a href="mailto:exatascursos23@gmail.com">
+                        exatascursos23@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <img src="img/pin.png" class="icon">
+                    <a href="https://www.google.com/maps?q=St.+B+Norte+QNB+18+Lote+01+Taguatinga+Brasilia"
+                        target="_blank">
+                        St. B Norte QNB 18 LOTE 01 - Taguatinga, Brasília - DF, 72115-180
+                    </a>
+                </p>
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-links">
+                <h3>Links</h3>
+
+                <a href="#scroll-banner">Início</a>
+                <a href="curso.html">Cursos</a>
+                <a href="#about-school">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            <p>© 2026 Exata Cursos Profissionalizantes - Todos os direitos reservados</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <a href="https://wa.me/5561991795648?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20cursos%20e%20como%20posso%20me%20matricular."
+        target="_blank" class="whatsapp-btn">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+    </a>
+
+</body>
+
+</html>
