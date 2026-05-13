@@ -1,4 +1,4 @@
-/* ================= LOADER ================= */
+
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
     if (loader) {
@@ -8,8 +8,6 @@ window.addEventListener("load", () => {
     }
 });
 
-
-/* ================= DARK MODE ================= */
 const themeBtns = document.querySelectorAll(".theme-toggle");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -27,8 +25,6 @@ themeBtns.forEach(btn => {
     });
 });
 
-
-/* ================= MENU MOBILE ================= */
 const menuBtn = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 
@@ -52,8 +48,6 @@ if (menuBtn && mobileMenu) {
     });
 }
 
-
-/* ================= BUSCA (SE EXISTIR) ================= */
 const searchInput = document.getElementById("searchInput");
 const courses = document.querySelectorAll(".course-card");
 
@@ -68,8 +62,6 @@ if (searchInput && courses.length > 0) {
     });
 }
 
-
-/* ================= SCROLL TOP BAR ================= */
 let lastScroll = 0;
 const topBar = document.querySelector(".top-bar");
 
@@ -88,7 +80,6 @@ if (topBar) {
 }
 
 
-/* ================= FORM → WHATSAPP ================= */
 const form = document.getElementById("contactForm");
 
 if (form) {
@@ -116,7 +107,6 @@ ${mensagem}`;
 }
 
 
-/* ================= CANVAS (SE EXISTIR) ================= */
 const canvas = document.getElementById("bg");
 
 if (canvas) {

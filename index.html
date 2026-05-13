@@ -17,7 +17,57 @@
         <p>Carregando...</p>
     </div>
 
+    <div id="modalPromo" class="modal-overlay">
+
+        <div class="modal-box">
+
+            <!-- IMAGEM / BANNER -->
+            <div class="modal-banner">
+                <img src="img/bolsa.png" alt="">
+            </div>
+
+            <!-- CONTEÚDO -->
+            <div class="modal-content">
+
+                <!-- FORM -->
+                <form id="promoForm" class="form-grid">
+
+                    <div class="input-group">
+                        <label>👤 Nome</label>
+                        <input type="text" id="nome" placeholder="Nome completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>💬 WhatsApp</label>
+                        <input type="tel" id="fone" placeholder="(99) 99999-9999" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>🎓 Curso desejado</label>
+                        <input type="text" id="curso" placeholder="Exemplo: Inglês" required>
+                    </div>
+
+                </form>
+
+                <!-- BOTÕES -->
+                <div class="modal-footer">
+                    <button type="button" class="btn-close" id="btnFechar">
+                        FECHAR
+                    </button>
+
+                    <button type="submit" form="promoForm" class="btn-send" id="btnEnviar">
+                        ENVIAR
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <canvas id="bg"></canvas>
+
     <!-- DESKTOP -->
     <header class="desktop-header">
 
@@ -98,8 +148,7 @@
 
     </header>
 
-
-    <!-- MOBILE  -->
+    <!--  MOBILE -->
     <header class="mobile-header">
 
         <img src="img/LOGO SEM FUNDO OLD.png" class="logo">
@@ -273,7 +322,6 @@
 
         <div class="about-container">
 
-            <!-- SLIDER -->
             <div class="about-slider">
 
                 <div class="slides" id="aboutSlides">
@@ -357,7 +405,7 @@
         </div>
 
         <div class="feedback-grid">
-        
+
             <div class="feedback-card">
                 <img src="img/Perfil.jpg" class="avatar">
 
@@ -377,8 +425,8 @@
                     ótima para estudo teórico e prático."
                 </p>
 
-                <h3>João Reis</h3>
-                <span>Aluno de T.I e Administração</span>
+                <h3>Yara Magalhães</h3>
+                <span>Aluna de T.I e Administração</span>
             </div>
 
             <div class="feedback-card">
@@ -407,11 +455,28 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Como funcionam os cursos?</span>
+                    <span>Os cursos têm suporte ao aluno?</span>
                     <div class="icon"></div>
                 </div>
                 <div class="faq-answer">
-                    Os cursos são online, com acesso imediato após a matrícula.
+                    📞 Nosso suporte humanizado está ativo das 🕗 08h00 às 17h00 (horário de Brasília).
+                    👨‍🏫 Além disso, o aluno conta com um Professor Virtual disponível 24 horas por dia 🌙☀️ para
+                    esclarecer dúvidas sobre o conteúdo do curso.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Qual é a metodologia das aulas?</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="faq-answer">
+                    🎓 As aulas são elaboradas com foco na excelência didática, visando atender a todos os perfis de
+                    estudantes.
+                    <br><br>Cada unidade de estudo é composta por: <br>
+                    <br>🎥 Videoaulas ministradas por professores especialistas.
+                    <br>📘 Apostila e Material de Apoio para aprofundamento do conteúdo.
+                    <br>🧠 Exercícios de Fixação e Provas Avaliativas para consolidação do aprendizado.
                 </div>
             </div>
 
@@ -421,17 +486,9 @@
                     <div class="icon"></div>
                 </div>
                 <div class="faq-answer">
-                    Sim, todos os cursos possuem certificado válido em todo o Brasil.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Preciso ter experiência?</span>
-                    <div class="icon"></div>
-                </div>
-                <div class="faq-answer">
-                    Não, temos cursos do básico ao avançado.
+                    Nossa certificação é válida em todo Brasil de acordo com a lei dos cursos livres: De acordo com a
+                    Lei nº. 9394/96, o Decreto nº. 5.154/04 e a Deliberação CEE 14/97 (Indicação CEE 14/97), os cursos
+                    livres são uma modalidade de ensino legal e válida em todo o território nacional
                 </div>
             </div>
 
@@ -441,27 +498,10 @@
                     <div class="icon"></div>
                 </div>
                 <div class="faq-answer">
-                    Sim, nossa plataforma é totalmente responsiva.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Os cursos têm suporte ao aluno?</span>
-                    <div class="icon"></div>
-                </div>
-                <div class="faq-answer">
-                    Sim, você terá suporte para tirar dúvidas sempre que precisar.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Quanto tempo tenho de acesso?</span>
-                    <div class="icon"></div>
-                </div>
-                <div class="faq-answer">
-                    O acesso é liberado por tempo suficiente para você concluir com tranquilidade.
+                    A metodologia híbrida permite que todos os alunos da EXATA tenham acesso ao seu curso presencial
+                    escolhido, integralmente na plataforma on-line, de modo que seja possível reforçar conhecimentos
+                    aprendidos, rever técnicas ou métodos ensinados e continuar aprendendo mesmo depois da aula
+                    presencial!
                 </div>
             </div>
 
@@ -471,18 +511,21 @@
                     <div class="icon"></div>
                 </div>
                 <div class="faq-answer">
-                    Sim, os certificados são válidos em todo o Brasil e podem ser usados para currículo e horas
-                    complementares.
+                    Sim. Os cursos livres no Brasil são modalidades de educação profissional rápida, regulamentados pelo
+                    Decreto nº 5.154/2004 e amparados pela Lei nº 9.394/96 (LDB). Não necessitam de autorização ou
+                    reconhecimento do MEC. Focados em capacitação técnica e qualificação profissional, eles têm validade
+                    nacional e podem ser oferecidos por CPF ou CNPJ.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Posso acessar pelo celular?</span>
+                    <span>Quanto tempo tenho de acesso?</span>
                     <div class="icon"></div>
                 </div>
                 <div class="faq-answer">
-                    Sim, você pode estudar pelo celular, tablet ou computador.
+                    Você terá acesso a duas aulas por semana, com duração de 1 hora e 30 minutos cada. Assim, você
+                    consegue aprender com qualidade, praticar e tirar dúvidas ao longo do curso. 🚀
                 </div>
             </div>
 
@@ -492,10 +535,15 @@
                     <div class="icon"></div>
                 </div>
                 <div class="faq-answer">
-                    Basta clicar em "Matricule-se" no curso desejado e seguir o processo.
+                    Para realizar sua matrícula é bem simples! 😊
+
+                    <br><br>Você pode entrar em contato conosco para receber todas as orientações e garantir sua vaga. E
+                    o
+                    melhor: você pode conseguir até 80% de bolsa de desconto no curso! 🎓🔥
+
+                    <br><br>Chama a gente agora e não perca essa oportunidade!
                 </div>
             </div>
-
         </div>
 
     </section>
@@ -504,13 +552,11 @@
 
         <div class="footer-container">
 
-            
             <div class="footer-brand">
                 <img src="img/LOGO SEM FUNDO OLD.png" alt="Exata Cursos">
                 <p>Transformando o seu futuro através da educação profissional.</p>
             </div>
 
-          
             <div class="footer-contact">
                 <h3>Contato</h3>
 
@@ -568,6 +614,7 @@
         target="_blank" class="whatsapp-btn">
         <img src="img/whatsapp.png" alt="WhatsApp">
     </a>
+
 
 </body>
 

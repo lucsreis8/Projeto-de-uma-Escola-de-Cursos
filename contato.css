@@ -10,7 +10,6 @@ body.dark {
     --text: #f1f1f1;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,7 @@ body {
     color: var(--text);
 }
 
-/* ================= LOADER ================= */
+/*LOADER*/
 #loader {
     position: fixed;
     inset: 0;
@@ -57,7 +56,7 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* ================= CANVAS ================= */
+/*CANVAS*/
 #bg {
     position: fixed;
     inset: 0;
@@ -382,7 +381,7 @@ body.dark .mobile-menu hr {
 
 
 
-/* ================= MOBILE ================= */
+/*MOBILE*/
 
 .mobile-header {
     display: none;
@@ -404,7 +403,7 @@ body.dark .mobile-menu hr {
     transform: translateX(-50%);
 }
 
-/* AÇÕES (lado direito) */
+/* AÇÕES  */
 .actions {
     min-width: 80px;
     display: flex;
@@ -466,7 +465,7 @@ body.dark .mobile-menu hr {
 /* CONTAINER */
 .footer-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
     gap: 30px;
 
     max-width: 1200px;
@@ -490,7 +489,7 @@ body.dark .mobile-menu hr {
     margin-bottom: 12px;
     font-size: 1rem;
 
-    color: var(--verde); /* VERDE DESTAQUE */
+    color: var(--verde);
 }
 
 /* CONTATO */
@@ -579,14 +578,12 @@ body.dark .mobile-menu hr {
 .footer-contact a:hover {
     color: var(--verde);
 }
-/* RESPONSIVO */
-@media (min-width: 768px) {
-    .footer-container {
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-}
 
 @media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
 
     .footer {
         text-align: center;
@@ -605,6 +602,7 @@ body.dark .mobile-menu hr {
 
     .footer-contact p {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .footer-logo {
@@ -620,10 +618,10 @@ body.dark .mobile-menu hr {
 
     .footer-links a {
         text-align: center;
+        width: 100%;
     }
 
 }
-
 
 .contact-section {
     padding: 80px 20px;

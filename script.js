@@ -1,4 +1,4 @@
-/* ================= LOADER ================= */
+/* LOADER */
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
     if (loader) {
@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 });
 
 
-/* ================= TEMA ================= */
+/* TEMA */
 const themeBtns = document.querySelectorAll(".theme-toggle");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -30,7 +30,7 @@ themeBtns.forEach(btn => {
 });
 
 
-/* ================= MENU MOBILE ================= */
+/*  MENU MOBILE */
 const menuBtn = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 
@@ -55,7 +55,7 @@ if (menuBtn && mobileMenu) {
 }
 
 
-/* ================= SLIDER INÍCIO ================= */
+/* SLIDER INÍCIO  */
 const homeTrack = document.getElementById("carouselTrack");
 const homeSlides = homeTrack ? homeTrack.querySelectorAll(".slide") : [];
 
@@ -89,7 +89,7 @@ if (homeTrack && homeNext && homePrev && homeSlides.length > 0) {
 }
 
 
-/* ================= SLIDER SOBRE (CORRIGIDO) ================= */
+/*SLIDER SOBRE */
 const aboutTrack = document.getElementById("aboutSlides");
 const aboutSlides = aboutTrack ? aboutTrack.querySelectorAll(".slide") : [];
 
@@ -123,7 +123,7 @@ if (aboutTrack && aboutNext && aboutPrev && aboutSlides.length > 0) {
 }
 
 
-/* ================= HEADER SCROLL ================= */
+/* HEADER SCROLL  */
 let lastScroll = 0;
 const header = document.querySelector(".desktop-header");
 
@@ -147,7 +147,7 @@ if (header) {
 }
 
 
-/* ================= FAQ ================= */
+/* FAQ  */
 document.querySelectorAll(".faq-item").forEach(item => {
     const question = item.querySelector(".faq-question");
     if (question) {
@@ -158,7 +158,7 @@ document.querySelectorAll(".faq-item").forEach(item => {
 });
 
 
-/* ================= FILTRO DE CURSOS ================= */
+/* FILTRO DE CURSOS */
 const filterBtns = document.querySelectorAll(".categories button");
 const cards = document.querySelectorAll(".course-card");
 
@@ -191,9 +191,9 @@ filterBtns.forEach(btn => {
 });
 
 
-/* ================= SCROLL SUAVE ================= */
+/* SCROLL SUAVE */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function(e) {
+    link.addEventListener("click", function (e) {
         e.preventDefault();
 
         const target = document.querySelector(this.getAttribute("href"));
@@ -207,7 +207,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
-/* ================= CANVAS ================= */
+/*  CANVAS */
 const canvas = document.getElementById("bg");
 
 if (canvas) {
@@ -258,7 +258,7 @@ if (canvas) {
 const botoes = document.querySelectorAll(".btn-main");
 
 botoes.forEach(botao => {
-    botao.addEventListener("click", function(e) {
+    botao.addEventListener("click", function (e) {
         e.preventDefault();
 
         const card = this.closest(".course-card");
@@ -277,4 +277,100 @@ Gostaria de saber:
 
         window.open(url, "_blank");
     });
+});
+
+const modal = document.getElementById("modalPromo");
+const btnFechar = document.getElementById("btnFechar");
+const form = document.getElementById("promoForm");
+const modalBox = document.querySelector(".modal-box");
+const foneInput = document.getElementById("fone");
+
+/* =========================
+   ABRIR MODAL
+========================= */
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        modal.classList.add("show");
+    }, 800);
+});
+
+/* =========================
+   FECHAR MODAL
+========================= */
+function fecharModal() {
+    modal.classList.remove("show");
+}
+
+/* botão fechar */
+btnFechar?.addEventListener("click", fecharModal);
+
+/* clicar fora do modal */
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        fecharModal();
+    }
+});
+
+/* evita fechar ao clicar dentro */
+modalBox?.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
+
+/* =========================
+   MÁSCARA TELEFONE
+========================= */
+foneInput?.addEventListener("input", (e) => {
+    let value = e.target.value;
+
+    // mantém só números
+    value = value.replace(/\D/g, "");
+
+    // limita 11 dígitos
+    value = value.substring(0, 11);
+
+    // aplica máscara
+    if (value.length > 0) {
+        value = value.replace(/^(\d{2})(\d)/, "($1) $2");
+    }
+    if (value.length > 6) {
+        value = value.replace(/(\d{5})(\d{1,4})$/, "$1-$2");
+    }
+
+    e.target.value = value;
+});
+
+/* =========================
+   ENVIO WHATSAPP
+========================= */
+form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const curso = document.getElementById("curso").value.trim();
+    const fone = document.getElementById("fone").value.replace(/\D/g, "");
+
+    if (!nome || !fone || !curso) {
+        alert("Preencha todos os campos");
+        return;
+    }
+
+    const numero = "5561991795648";
+
+    const mensagem = `Olá, tudo bem?
+
+Gostaria de solicitar informações e realizar minha matrícula.
+
+Dados do interessado:
+Nome: ${nome}
+WhatsApp: ${fone}
+Curso de interesse: ${curso}
+
+Fico no aguardo do retorno.`;
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, "_blank");
+
+    fecharModal();
+    form.reset();
 });

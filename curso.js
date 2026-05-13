@@ -1,11 +1,10 @@
-/* LOADER */
+
 window.addEventListener("load", () => {
     setTimeout(() => {
         document.getElementById("loader").classList.add("hide");
     }, 700);
 });
 
-/* DARK MODE */
 const themeBtns = document.querySelectorAll(".theme-toggle");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -23,7 +22,6 @@ themeBtns.forEach(btn => {
     });
 });
 
-/* CANVAS PARTICULAS */
 const canvas = document.getElementById("bg");
 const ctx = canvas.getContext("2d");
 
@@ -71,14 +69,11 @@ animate();
 const menuBtn = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 
-/* abrir / fechar */
 menuBtn.addEventListener("click", (e) => {
-    e.stopPropagation(); // evita fechar ao clicar nele mesmo
+    e.stopPropagation();
     mobileMenu.classList.toggle("active");
 });
 
-
-/* fechar ao clicar fora */
 document.addEventListener("click", (e) => {
 
     const clicouFora =
@@ -90,8 +85,6 @@ document.addEventListener("click", (e) => {
     }
 });
 
-
-/* fechar ao clicar nos links */
 document.querySelectorAll(".mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
         mobileMenu.classList.remove("active");

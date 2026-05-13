@@ -10,7 +10,6 @@ body.dark {
     --text: #f1f1f1;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,7 @@ body {
     color: var(--text);
 }
 
-/* ================= LOADER ================= */
+/*LOADER*/
 #loader {
     position: fixed;
     inset: 0;
@@ -57,7 +56,7 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* ================= CANVAS ================= */
+/*CANVAS*/
 #bg {
     position: fixed;
     inset: 0;
@@ -382,7 +381,7 @@ body.dark .mobile-menu hr {
 
 
 
-/* ================= MOBILE ================= */
+/*MOBILE*/
 
 .mobile-header {
     display: none;
@@ -404,7 +403,7 @@ body.dark .mobile-menu hr {
     transform: translateX(-50%);
 }
 
-/* AÇÕES (lado direito) */
+/* AÇÕES */
 .actions {
     min-width: 80px;
     display: flex;
@@ -547,17 +546,17 @@ body.dark .course-card {
 }
 
 .search-box {
-    max-width: 600px; /* aumentei */
+    max-width: 600px;
     width: 100%;
 
-    margin: 0 auto 40px auto; /* centraliza + espaço embaixo */
+    margin: 0 auto 40px auto;
     display: flex;
     justify-content: center;
 }
 
 .search-box input {
     width: 100%;
-    padding: 16px 20px; /* maior */
+    padding: 16px 20px; 
 
     border-radius: 40px;
     border: 1px solid rgba(0,0,0,0.1);
@@ -589,9 +588,8 @@ body.dark .course-card {
 /* CONTAINER */
 .footer-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
     gap: 30px;
-
     max-width: 1200px;
     margin: auto;
     padding: 50px 20px;
@@ -613,7 +611,7 @@ body.dark .course-card {
     margin-bottom: 12px;
     font-size: 1rem;
 
-    color: var(--verde); /* VERDE DESTAQUE */
+    color: var(--verde);
 }
 
 /* CONTATO */
@@ -703,13 +701,11 @@ body.dark .course-card {
     color: var(--verde);
 }
 /* RESPONSIVO */
-@media (min-width: 768px) {
-    .footer-container {
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-}
-
 @media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
 
     .footer {
         text-align: center;
@@ -728,6 +724,7 @@ body.dark .course-card {
 
     .footer-contact p {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .footer-logo {
@@ -743,6 +740,7 @@ body.dark .course-card {
 
     .footer-links a {
         text-align: center;
+        width: 100%;
     }
 
 }
